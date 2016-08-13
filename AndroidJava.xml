@@ -1,0 +1,177 @@
+<templateSet group="AndroidJava">
+  <template name="avta" value="public static TypeAdapter&lt;$class$&gt; typeAdapter(Gson gson) {&#10;&#9;return new AutoValue_$class$.GsonTypeAdapter(gson);&#10;}" description="Create TypeAdapter for AutoValueGson" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="className()" defaultValue="" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="bbthis" value="ButterKnife.bind(this);" description="BindView annotated fields and methods in the specified Activity. The current content view is used as the view root." toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="KOTLIN_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="bbview" value="ButterKnife.bind(this, $view$);" description="BindView annotated fields and methods in the specified target using the source View as the view root." toReformat="true" toShortenFQNames="true">
+    <variable name="view" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="bfind" value="ButterKnife.findById($view$, R.id.$viewId$);" description="Simpler version of View.findViewById(int) which infers the target type." toReformat="true" toShortenFQNames="true">
+    <variable name="view" expression="variableOfType(&quot;android.view.View&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="viewId" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+    </context>
+  </template>
+  <template name="bview" value="@BindView(R.id.$resId$) $class$ $variable$;" description="Bind a field to the view for the specified ID. The view will automatically be cast to the field type." toReformat="true" toShortenFQNames="true">
+    <variable name="resId" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="camelCase(resId)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="bviews" value="@BindViews({ R.id.$resId1$, R.id.$resId2$ }) List&lt;$class$&gt; $variable$;" description="Bind a field to the view for the specified ID. The view will automatically be cast to the field type." toReformat="true" toShortenFQNames="true">
+    <variable name="resId1" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="resId2" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="classNameComplete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="suggestVariableName()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="onclick" value="@OnClick(R.id.$viewId$)&#10;void on$view$Click() {&#10;&#9;$cursor$&#10;}" description="Bind a method to an OnClickListener on the view for each ID specified." toReformat="true" toShortenFQNames="true">
+    <variable name="viewId" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="view" expression="capitalize(camelCase(viewId))" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="onclickview" value="@OnClick(R.id.$viewId$)&#10;void on$view$Click(View view) {&#10;&#9;$cursor$&#10;}" description="Bind a method to an OnClickListener on the view for each ID specified." toReformat="true" toShortenFQNames="true">
+    <variable name="viewId" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="view" expression="capitalize(camelCase(viewId))" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="KOTLIN_TOPLEVEL" value="true" />
+    </context>
+  </template>
+  <template name="ontouch" value="@OnTouch(R.id.$viewId$)&#10;void on$view$Touch() {&#10;&#9;$cursor$&#10;}" description="Bind a method to an OnTouchListener on the view for each ID specified." toReformat="true" toShortenFQNames="true">
+    <variable name="viewId" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="view" expression="capitalize(camelCase(viewId))" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="ontouchview" value="@OnTouch(R.id.$viewId$)&#10;void on$view$Touch(View view) {&#10;&#9;$cursor$&#10;}" description="Bind a method to an OnTouchListener on the view for each ID specified." toReformat="true" toShortenFQNames="true">
+    <variable name="viewId" expression="complete()" defaultValue="" alwaysStopAt="true" />
+    <variable name="view" expression="capitalize(camelCase(viewId))" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="pa" value="public abstract $class$ $functionName$();" description="public abstract method" toReformat="true" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="functionName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="pai" value="public abstract int $functionName$();" description="public abstract integer method" toReformat="true" toShortenFQNames="true">
+    <variable name="functionName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="pas" value="public abstract String $functionName$();" description="public abstract String method" toReformat="true" toShortenFQNames="true">
+    <variable name="functionName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="td" value="Timber.d(&quot;$message$&quot;);" description="Log a debug message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="te" value="Timber.e(&quot;$message$&quot;);" description="Log an error message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ti" value="Timber.i(&quot;$message$&quot;);" description="Log an info message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ttd" value="Timber.d($variable$, &quot;$message$&quot;);" description="Log a debug exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tte" value="Timber.e($variable$, &quot;$message$&quot;);" description="Log an error exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tti" value="Timber.i($variable$, &quot;$message$&quot;);" description="Log an info exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ttv" value="Timber.v($variable$, &quot;$message$&quot;);" description="Log a verbose exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ttw" value="Timber.w($variable$, &quot;$message$&quot;);" description="Log a warning exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ttwtf" value="Timber.wtf($variable$, &quot;$message$&quot;);" description="Log an assert exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tv" value="Timber.v(&quot;$message$&quot;);" description="Log a verbose message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="tw" value="Timber.w(&quot;$message$&quot;);" description="Log a warning message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="twtf" value="Timber.wtf(&quot;$message$&quot;);" description="Log an assert message with optional format args." toReformat="true" toShortenFQNames="true">
+    <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
