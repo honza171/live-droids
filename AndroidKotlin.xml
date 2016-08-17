@@ -106,15 +106,17 @@
       <option name="KOTLIN_CLASS" value="true" />
     </context>
   </template>
-  <template name="te" value="Timber.e(&quot;$message$&quot;)" description="Log an error message with optional format args." toReformat="true" toShortenFQNames="true">
+  <template name="te" value="Timber.e(&quot;$message$ &quot; + $variable$)" description="Log an error message with optional format args." toReformat="true" toShortenFQNames="true">
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="kotlinVariable()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
       <option name="KOTLIN_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="ti" value="Timber.i(&quot;$message$&quot;)" description="Log an info message with optional format args." toReformat="true" toShortenFQNames="true">
+  <template name="ti" value="Timber.i(&quot;$message$ &quot; + $variable$)" description="Log an info message with optional format args." toReformat="true" toShortenFQNames="true">
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="kotlinVariable()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
       <option name="KOTLIN_STATEMENT" value="true" />
@@ -168,22 +170,25 @@
       <option name="KOTLIN_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="tv" value="Timber.v(&quot;$message$&quot;)" description="Log a verbose message with optional format args." toReformat="true" toShortenFQNames="true">
+  <template name="tv" value="Timber.v(&quot;$message$ &quot; + $variable$)" description="Log a verbose message with optional format args." toReformat="true" toShortenFQNames="true">
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="kotlinVariable()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
       <option name="KOTLIN_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="tw" value="Timber.w(&quot;$message$&quot;)" description="Log a warning message with optional format args." toReformat="true" toShortenFQNames="true">
+  <template name="tw" value="Timber.w(&quot;$message$ &quot; + $variable$)" description="Log a warning message with optional format args." toReformat="true" toShortenFQNames="true">
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="kotlinVariable()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
       <option name="KOTLIN_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="twtf" value="Timber.wtf(&quot;$message$&quot;)" description="Log an assert message with optional format args." toReformat="true" toShortenFQNames="true">
+  <template name="twtf" value="Timber.wtf(&quot;$message$ &quot; + $variable$)" description="Log an assert message with optional format args." toReformat="true" toShortenFQNames="true">
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="kotlinVariable()" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
       <option name="KOTLIN_STATEMENT" value="true" />
