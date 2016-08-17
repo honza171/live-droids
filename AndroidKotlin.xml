@@ -1,5 +1,5 @@
 <templateSet group="AndroidKotlin">
-  <template name="avta" value="companion object {&#10;&#10;&#9;fun typeAdapter(gson: Gson): TypeAdapter&lt;$class$&gt; {&#10;&#9;&#9;return AutoValue_$class$.GsonTypeAdapter(gson)&#10;&#9;}&#10;}" description="Create TypeAdapter for AutoValueGson" toReformat="true" toShortenFQNames="true">
+  <template name="avtypeadapter" value="companion object {&#10;&#10;&#9;fun typeAdapter(gson: Gson): TypeAdapter&lt;$class$&gt; {&#10;&#9;&#9;return AutoValue_$class$.GsonTypeAdapter(gson)&#10;&#9;}&#10;}" description="Create TypeAdapter for AutoValueGson" toReformat="true" toShortenFQNames="true">
     <variable name="class" expression="kotlinClassName()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_DECLARATION" value="false" />

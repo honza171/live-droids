@@ -1,5 +1,5 @@
 <templateSet group="AndroidJava">
-  <template name="avta" value="public static TypeAdapter&lt;$class$&gt; typeAdapter(Gson gson) {&#10;&#9;return new AutoValue_$class$.GsonTypeAdapter(gson);&#10;}" description="Create TypeAdapter for AutoValueGson" toReformat="true" toShortenFQNames="true">
+  <template name="avtypeadapter" value="public static TypeAdapter&lt;$class$&gt; typeAdapter(Gson gson) {&#10;&#9;return new AutoValue_$class$.GsonTypeAdapter(gson);&#10;}" description="Create TypeAdapter for AutoValueGson" toReformat="true" toShortenFQNames="true">
     <variable name="class" expression="className()" defaultValue="" alwaysStopAt="false" />
     <context>
       <option name="JAVA_DECLARATION" value="true" />
@@ -172,6 +172,20 @@
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sdef" value="@StringDef({ $variable$ })&#10;@interface $name$ {}" description="Create enumerated annotation of String set" toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+    </context>
+  </template>
+  <template name="idef" value="@IntDef({ $variable$ })&#10;@interface $name$ {}" description="Create enumerated annotation of Integer set" toReformat="true" toShortenFQNames="true">
+    <variable name="variable" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
     </context>
   </template>
 </templateSet>
