@@ -121,7 +121,7 @@
     </context>
   </template>
   <template name="ttd" value="Timber.d($variable$, &quot;$message$&quot;)" description="Log a debug exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
@@ -129,7 +129,7 @@
     </context>
   </template>
   <template name="tte" value="Timber.e($variable$, &quot;$message$&quot;)" description="Log an error exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
@@ -137,7 +137,7 @@
     </context>
   </template>
   <template name="tti" value="Timber.i($variable$, &quot;$message$&quot;)" description="Log an info exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
@@ -145,7 +145,7 @@
     </context>
   </template>
   <template name="ttv" value="Timber.v($variable$, &quot;$message$&quot;)" description="Log a verbose exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
@@ -153,7 +153,7 @@
     </context>
   </template>
   <template name="ttw" value="Timber.w($variable$, &quot;$message$&quot;)" description="Log a warning exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
@@ -161,7 +161,7 @@
     </context>
   </template>
   <template name="ttwtf" value="Timber.wtf($variable$, &quot;$message$&quot;)" description="Log an assert exception and a message with optional format args." toReformat="true" toShortenFQNames="true">
-    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="true" />
+    <variable name="variable" expression="variableOfType(&quot;java.lang.Throwable&quot;)" defaultValue="" alwaysStopAt="false" />
     <variable name="message" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_STATEMENT" value="false" />
