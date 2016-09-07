@@ -39,9 +39,18 @@ A collection of useful live templates especially if you use [AutoValue](https://
 **`ttw`**: "Log a warning exception and a message with optional format args."  
 **`ttwtf`**: "Log an assert exception and a message with optional format args."
 
+##Install
+To get started, simply clone this repository to your Android Studio's config/templates folder.  
+1. Live templates are stored in the following location:
+  - **OS X**: `~/Library/Preferences/AndroidStudio<VERSION>/templates`
+  - **Linux**: `~AndroidStudio<VERSION>\config\templates`
+  - **Windows**: `<USER_HOME_DIRECTORY>.AndroidStudio<VERSION>\config\templates`
+2. Once you found it, `cd` into it
+3. Run `git clone https://github.com/honza171/live-droids.git .`
+4. Restart AndroidStudio
+
 ##TODO
-- retrofit 2.0 methods  
-- starter pattern (just create intent)  
+- retrofit 2.0 methods   
 - general improvements (better expressions, default parameters etc.)
 
 ##License
