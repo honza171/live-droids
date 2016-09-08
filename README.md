@@ -1,8 +1,7 @@
-#live-droids
 No one wants to write repetitive boilerplate code.
 
 ##Overview 
-A collection of useful live templates especially if you use [AutoValue](https://github.com/google/auto/tree/master/value), [ButterKnife](https://github.com/JakeWharton/butterknife) or [Timber](https://github.com/JakeWharton/timber).
+A collection of useful live templates especially if you use [AutoValue](https://github.com/google/auto/tree/master/value), [ButterKnife](https://github.com/JakeWharton/butterknife) or [Timber](https://github.com/JakeWharton/timber). Kotlin is also supported except enumerated annotations (pull requests are welcome).
 
 ###Android
 **`idef`**: "Create enumerated annotation of Integer set"  
@@ -41,13 +40,14 @@ A collection of useful live templates especially if you use [AutoValue](https://
 
 ##Install
 To get started, simply clone this repository to your Android Studio's config/templates folder.  
-1. Live templates are stored in the following location:
+**1.** Live templates are stored in the following location:  
   - **OS X**: `~/Library/Preferences/AndroidStudio<VERSION>/templates`
   - **Linux**: `~AndroidStudio<VERSION>\config\templates`
-  - **Windows**: `<USER_HOME_DIRECTORY>.AndroidStudio<VERSION>\config\templates`
-2. Once you found it, `cd` into it
-3. Run `git clone https://github.com/honza171/live-droids.git .`
-4. Restart AndroidStudio
+  - **Windows**: `<USER_HOME_DIRECTORY>.AndroidStudio<VERSION>\config\templates`  
+
+**2.** Once you found it, `cd` into it  
+**3.** Run `git clone https://github.com/honza171/live-droids.git .`  
+**4.** Restart AndroidStudio  
 
 ##TODO
 - retrofit 2.0 methods   
