@@ -1,4 +1,5 @@
 No one wants to write repetitive boilerplate code.
+![](art/showcase.gif)
 
 ##Overview 
 A collection of useful live templates especially if you use [AutoValue](https://github.com/google/auto/tree/master/value), [ButterKnife](https://github.com/JakeWharton/butterknife) or [Timber](https://github.com/JakeWharton/timber). Kotlin is also supported except enumerated annotations (pull requests are welcome).
