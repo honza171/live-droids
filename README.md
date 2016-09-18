@@ -1,4 +1,5 @@
 No one wants to write repetitive boilerplate code.
+
 ![](art/showcase.gif)
 
 ##Overview 
