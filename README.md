@@ -55,6 +55,11 @@ To get started, simply clone this repository to your Android Studio's config/tem
 - retrofit 2.0 methods   
 - general improvements (better expressions, default parameters etc.)
 
+##Donations
+When you find these shortcuts useful you can donate via Paypal: 
+- [Donate 5$](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DJSHVLKALTJPS) It boosts my productivity, here's a coffee (or some beer) for you!
+- [Donate any amount](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=676PVVKVGXNCS) Thank's for creating this project.
+
 ##License
 
     Copyright 2016 Jan Jacko
